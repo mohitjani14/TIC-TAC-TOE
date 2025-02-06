@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-ec2
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
         with:

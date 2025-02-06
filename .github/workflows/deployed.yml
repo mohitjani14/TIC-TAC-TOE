@@ -1,4 +1,4 @@
-name: Build
+ame: Build
 
 on:
   push:
@@ -21,6 +21,4 @@ jobs:
       - name: npm Install dependency
         run: npm install  # Add your specific npm install command
       - name: Install Trivy
-  run: |
-    # Scanning files
-    trivy fs . > trivyfs.txt
+        run: trivy fs . > trivyfs.txt
